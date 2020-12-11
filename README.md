@@ -16,7 +16,7 @@ laravel-disk-monitor can monitor the usage of the filesystems configured in Lara
 You can install the package via composer:
 
 ```bash
-composer require tepuilabs/laravel-disk-monitor
+composer require tepuilabs/disk-monitor
 ```
 
 You can publish and run the migrations with:
