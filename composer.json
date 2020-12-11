@@ -1,0 +1,61 @@
+{
+    "name": "tepuilabs/disk-monitor",
+    "description": "Monitor metrics of Laravel disks",
+    "keywords": [
+        "tepuilabs",
+        "laravel-disk-monitor"
+    ],
+    "homepage": "https://github.com/tepuilabs/disk-monitor",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "angel cruz",
+            "email": "angel@tepuilabs.dev",
+            "homepage": "https://spatie.be",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/contracts": "^8.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.17",
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.3",
+        "vimeo/psalm": "^3.11"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tepuilabs\\LaravelDiskMonitor\\": "src",
+            "Tepuilabs\\LaravelDiskMonitor\\Database\\Factories\\": "database/factories"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tepuilabs\\LaravelDiskMonitor\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "psalm": "vendor/bin/psalm",
+        "test": "vendor/bin/phpunit --colors=always",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+		"format": "vendor/bin/php-cs-fixer fix --allow-risky=yes",
+		"all" : "composer psalm && composer test && composer test-coverage && composer format"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tepuilabs\\LaravelDiskMonitor\\LaravelDiskMonitorServiceProvider"
+            ],
+            "aliases": {
+                "LaravelDiskMonitor": "Tepuilabs\\LaravelDiskMonitor\\LaravelDiskMonitorFacade"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
