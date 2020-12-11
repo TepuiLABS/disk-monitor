@@ -4,9 +4,9 @@
 
 # Monitor metrics of Laravel disks
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/tepuilabs/laravel-disk-monitor.svg?style=flat-square)](https://packagist.org/packages/tepuilabs/laravel-disk-monitor)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/tepuilabs/laravel-disk-monitor/run-tests?label=tests)](https://github.com/tepuilabs/laravel-disk-monitor/actions?query=workflow%3Arun-tests+branch%3Amaster)
-[![Total Downloads](https://img.shields.io/packagist/dt/tepuilabs/laravel-disk-monitor.svg?style=flat-square)](https://packagist.org/packages/tepuilabs/laravel-disk-monitor)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/tepuilabs/disk-monitor.svg?style=flat-square)](https://packagist.org/packages/tepuilabs/disk-monitor)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/tepuilabs/disk-monitor/run-tests?label=tests)](https://github.com/tepuilabs/disk-monitor/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![Total Downloads](https://img.shields.io/packagist/dt/tepuilabs/disk-monitor.svg?style=flat-square)](https://packagist.org/packages/tepuilabs/disk-monitor)
 
 
 laravel-disk-monitor can monitor the usage of the filesystems configured in Laravel. Currently only the amount of files a disk contains is monitored.
