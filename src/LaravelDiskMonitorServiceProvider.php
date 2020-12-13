@@ -9,7 +9,7 @@ use Tepuilabs\LaravelDiskMonitor\Http\Controllers\DiskMetricsController;
 
 class LaravelDiskMonitorServiceProvider extends ServiceProvider
 {
-    public function boot()
+    public function boot(): void
     {
         $this
             ->registerPublishables()

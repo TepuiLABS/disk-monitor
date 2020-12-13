@@ -12,7 +12,7 @@ class RecordDiskMetricsCommand extends Command
 
     public $description = 'Record the metrics of a disk';
 
-    public function handle()
+    public function handle(): void
     {
         collect(config('laravel-disk-monitor.disk_names'))
             ->each(fn (string $diskName) => $this->recordMetrics($diskName));
